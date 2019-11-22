@@ -4,7 +4,7 @@ pipeline {
         stage ('Build Servlet Project') {
             steps {
                 /*For windows machine */
-               bat  'mvn -f ${workspace}\\java-tomcat-maven-example\\pom.xml clean package'
+               bat  "mvn -f ${workspace}\\java-tomcat-maven-example\\pom.xml clean package"
 
                 /*For Mac & Linux machine */
                // sh  'mvn clean package'
